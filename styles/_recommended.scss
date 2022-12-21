@@ -1,0 +1,132 @@
+.recommended {
+  padding: 60px 0 0 60px;
+}
+
+.text-recommended-box {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.text-recommended-title {
+  font-size: 26px;
+}
+
+.main-recommended-box {
+  display: flex;
+  gap: 30px;
+}
+
+.recommended-card-big-box {
+  width: 50%;
+}
+
+.recommended-img-box-big {
+  height: 600px;
+}
+
+.recommended-box-desc-big {
+  background-color: #f9f9f9;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommended-text-name {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.recommended-subcontent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  width: 50%;
+}
+
+.recommended-small-cards-container {
+  display: flex;
+  gap: 50px;
+}
+
+.recommended-card-small-box {
+  height: 570px;
+  min-width: 500px;
+}
+
+.recommended-img-box-small {
+  padding-top: 50px;
+  height: 570px;
+  width: 100%;
+}
+
+.recommended-rates-container {
+  display: flex;
+  gap: 8px;
+  padding-top: 5px;
+}
+
+.recommended-info-name {
+  font-size: 16px;
+}
+
+.recommended-info-link {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.fa-star {
+  color: #f8a401;
+  font-size: 16px;
+}
+
+.recommended-box-desc-small {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommended-rates-container-small {
+  display: flex;
+  gap: 5px;
+}
+
+.recommended-rates-container-small .fa-star {
+  font-size: 10px;
+}
+
+.recommended-text-name-small {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.recommended-rates-amount-small {
+  font-size: 12px;
+}
+
+.recommended-info-name-small {
+  font-size: 14px;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 250px;
+}
+
+.circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #9b9995;
+}
+
+.circle:nth-child(2) {
+  background-color: #f8a401;
+}

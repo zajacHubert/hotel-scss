@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <h3 class="text-company">Gloritel</h3>
+        <nav>
+          <ul class="menu-list">
+            <li class="menu-item"><a href="#">Find Hotels</a></li>
+            <li class="menu-item"><a href="#">Location</a></li>
+            <li class="menu-item"><a href="#">About</a></li>
+            <li class="menu-item"><a href="#">Contact</a></li>
+            <li class="menu-item"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-box">
+        <div class="text-box">
+          <div class="title-box">
+            <h1 class="title">Find most Luxurious Hotel</h1>
+            <div class="video-box">
+              <p class="text-small">Watch Demo Video</p>
+              <div class="icon-box">
+                <i class="fa-sharp fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow-box">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="form-box">
+          <form class="form">
+            <label for="destination" class="label-form">Where you go?</label>
+            <i class="fa-sharp fa-solid fa-location-dot icon"></i>
+            <input
+              class="input-form"
+              class="destination"
+              type="text"
+              name="destination"
+              placeholder="try Pakistan"
+            />
+            <div class="date-box">
+              <div class="item-box">
+                <label for="date-in" class="label-form">Check in</label>
+                <input
+                  class="input-form"
+                  type="date"
+                  name="date-in"
+                  class="date-in"
+                />
+              </div>
+              <div class="item-box">
+                <label for="date-out" class="label-form">Check out</label>
+                <input class="input-form" type="date" name="date-out" />
+              </div>
+            </div>
+
+            <label for="guest" class="label-form">Guests</label>
+            <select class="input-form" class="guest" name="guest">
+              <option value="">How many guests?</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <p class="error guest"></p>
+            <div class="container-pay">
+              <input
+                class="input-form input-pay"
+                type="checkbox"
+                id="pay"
+                name="pay"
+                placeholder="try Pakistan"
+                checked="checked"
+              />
+              <label for="pay" class="label-form">Pay when checking in?</label>
+            </div>
+            <button type="button" class="btn-form">Search Hotels</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- RECOMMENED SECTION !!!!! -->
+      <section class="recommended">
+        <div class="text-recommended-box">
+          <h2 class="text-recommended-title">Recommended Hotels</h2>
+          <p class="text-recomended-desc">
+            Book hotels as based upon experienced the best booking ever. Highly
+            recommended
+          </p>
+        </div>
+        <div class="main-recommended-box">
+          <div class="recommended-card-big-box">
+            <div class="recommended-img-box-big">
+              <img
+                src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+                alt="hotel"
+              />
+            </div>
+            <div class="recommended-box-desc-big">
+              <div class="recommended-hotel-rate-box">
+                <h3 class="recommended-text-name">Delight Hotel</h3>
+                <div class="recommended-rates-container">
+                  <div class="stars-box-big">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="recommended-text-rate">
+                    <span class="recommended-rates-amount">(200)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="recommended-hotel-info-box">
+                <h4 class="recommended-info-name">Singapore</h4>
+                <span class="recommended-info-link">Learn More</span>
+              </div>
+            </div>
+          </div>
+          <div class="recommended-subcontent-container">
+            <div class="recommended-small-cards-container">
+              <div class="recommended-card-small-box">
+                <div class="recommended-img-box-small">
+                  <img
+                    src="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+                    alt="hotel"
+                  />
+                </div>
+                <div class="recommended-box-desc-small">
+                  <div class="recommended-hotel-rate-box-small">
+                    <h3 class="recommended-text-name-small">Royal Hotel</h3>
+                    <div class="recommended-rates-container-small">
+                      <div class="stars-box-small">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="recommended-text-rate-small">
+                        <span class="recommended-rates-amount-small"
+                          >(200)</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recommended-hotel-info-box-small">
+                    <h4 class="recommended-info-name-small">Singapore</h4>
+                    <span class="recommended-info-link-small">Learn More</span>
+                  </div>
+                </div>
+              </div>
+              <div class="recommended-card-small-box">
+                <div class="recommended-img-box-small">
+                  <img
+                    src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
+                    alt="hotel"
+                  />
+                </div>
+                <div class="recommended-box-desc-small">
+                  <div class="recommended-hotel-rate-box-small">
+                    <h3 class="recommended-text-name-small">Royal Hotel</h3>
+                    <div class="recommended-rates-container-small">
+                      <div class="stars-box-small">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="recommended-text-rate-small">
+                        <span class="recommended-rates-amount-small"
+                          >(200)</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recommended-hotel-info-box-small">
+                    <h4 class="recommended-info-name-small">Singapore</h4>
+                    <span class="recommended-info-link-small">Learn More</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="circles">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS -->
+      <section class="benefits">
+        <div class="benefits-main-container">
+          <div class="benefits-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="hotel"
+            />
+          </div>
+          <div class="benefits-content-box">
+            <div class="benefits-text-box">
+              <h2 class="benefits-title">Benefits of using our services</h2>
+            </div>
+            <div class="benefits-descs-box">
+              <div class="benefits-desc-box">
+                <div class="benefits-number-box">
+                  <span class="benefits-number">01</span>
+                  <span class="benefits-shape"></span>
+                </div>
+                <div class="benefits-text-small-box">
+                  <h3 class="benefits-subtitle">Best Breakfast</h3>
+                  <p class="benefit-desc-text">
+                    Amet minim mollit non deserunt ahjas ullamco est sit aliqua
+                    dolor amet sint. Velit officia consequat
+                  </p>
+                </div>
+              </div>
+              <div class="benefits-desc-box">
+                <div class="benefits-number-box">
+                  <span class="benefits-number">01</span>
+                  <span class="benefits-shape"></span>
+                </div>
+                <div class="benefits-text-small-box">
+                  <h3 class="benefits-subtitle">Best Breakfast</h3>
+                  <p class="benefit-desc-text">
+                    Amet minim mollit non deserunt ahjas ullamco est sit aliqua
+                    dolor amet sint. Velit officia consequat
+                  </p>
+                </div>
+              </div>
+              <div class="benefits-desc-box">
+                <div class="benefits-number-box">
+                  <span class="benefits-number">01</span>
+                  <span class="benefits-shape"></span>
+                </div>
+                <div class="benefits-text-small-box">
+                  <h3 class="benefits-subtitle">Best Breakfast</h3>
+                  <p class="benefit-desc-text">
+                    Amet minim mollit non deserunt ahjas ullamco est sit aliqua
+                    dolor amet sint. Velit officia consequat
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEEDBACK -->
+      <section class="feedback">
+        <div class="feedback-top-row">
+          <div class="feedback-title-box">
+            <h3 class="feedback-title">Our Customer Feedback</h3>
+            <p class="feedback-text-bigger">
+              Don't take our word for it. Trust our customers
+            </p>
+          </div>
+          <div class="feedback-buttons-box">
+            <div class="feedback-btn back">
+              <span class="feedback-icon"
+                ><i class="fa-solid fa-chevron-left"></i></span
+              >Previous
+            </div>
+            <div class="feedback-btn next">
+              Next
+              <span class="feedback-icon"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-main-container">
+          <div class="feedback-card-box">
+            <div class="feedback-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="portrait"
+              />
+            </div>
+            <div class="feedback-card-text-box">
+              <h5 class="feedback-text-name">Floyd Milles</h5>
+              <p class="feedback-text-smaller">
+                ullamco est sit aliqua dolor do amet sint. Velit officia
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="feedback-card-box">
+            <div class="feedback-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="portrait"
+              />
+            </div>
+            <div class="feedback-card-text-box">
+              <h5 class="feedback-text-name">Floyd Milles</h5>
+              <p class="feedback-text-smaller">
+                ullamco est sit aliqua dolor do amet sint. Velit officia
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="feedback-card-box">
+            <div class="feedback-img-box">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="portrait"
+              />
+            </div>
+            <div class="feedback-card-text-box">
+              <h5 class="feedback-text-name">Floyd Milles</h5>
+              <p class="feedback-text-smaller">
+                ullamco est sit aliqua dolor do amet sint. Velit officia
+                consequat duis enim velit mollit. Exercitation veniam consequat
+                sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-circles-container">
+          <div class="feedback-circle"></div>
+          <div class="feedback-circle"></div>
+          <div class="feedback-circle"></div>
+        </div>
+      </section>
+
+      <!-- SUBSCRIBE -->
+      <section class="subscribe">
+        <h2 class="subscribe-title">Subscribe to Our Newsletter</h2>
+        <p class="subscribe-text-small">
+          Don't miss this opportunity. Subscribe now
+        </p>
+        <div class="subscribe-form">
+          <div class="input-box">
+            <input
+              type="text"
+              class="subscribe-email"
+              placeholder="Enter your email address"
+            />
+            <button class="subscribe-btn">subscribe</button>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <contact class="contact">
+          <div class="contact-container">
+            <div class="contact-col">
+              <h4 class="contact-col-title">Gloritel</h4>
+              <div class="contact-col-content">
+                <p class="contact-content-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+              </div>
+            </div>
+            <div class="contact-col">
+              <h4 class="contact-col-title">Quick links</h4>
+              <div class="contact-col-content">
+                <p class="contact-content-text">Home</p>
+                <p class="contact-content-text">Find Hotels</p>
+                <p class="contact-content-text">Location</p>
+                <p class="contact-content-text">About</p>
+              </div>
+            </div>
+            <div class="contact-col">
+              <h4 class="contact-col-title">Information</h4>
+              <div class="contact-col-content">
+                <p class="contact-content-text">Privacy Policy</p>
+                <p class="contact-content-text">Terms of Service</p>
+                <p class="contact-content-text">Contact</p>
+              </div>
+            </div>
+            <div class="contact-col">
+              <h4 class="contact-col-title">Social</h4>
+              <div class="contact-col-content-social">
+                <span class="contact-icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </span>
+                <span class="contact-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+                <span class="contact-icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </span>
+                <span class="contact-icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </contact>
+      </section>
+    </main>
+    <footer class="footer">Copyright &copy 2022 | Designed by Hina HM</footer>
+  </body>
+</html>

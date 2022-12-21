@@ -1,0 +1,206 @@
+header {
+  background-image: url('https://cdn.pixabay.com/photo/2015/03/09/18/34/beach-666122_960_720.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 30px 60px;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.text-company {
+  font-size: 25px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.menu-item:last-of-type {
+  padding: 10px 30px;
+  background-color: #fdc463;
+  color: black;
+  border-radius: 8px;
+}
+
+.main-box {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon-box {
+  justify-self: center;
+  align-self: center;
+}
+
+.form-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.arrow-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-angle-down {
+  font-size: 50px;
+}
+
+.title-box {
+  width: 60%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 60px;
+}
+
+.video-box {
+  position: relative;
+}
+
+.icon-box {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+}
+
+.fa-play {
+  color: #fdc463;
+  position: absolute;
+  font-size: 22px;
+  left: 14px;
+  top: 10px;
+}
+
+.text-small {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  color: black;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 3px 20px;
+  font-size: 12px;
+}
+
+.form {
+  width: 500px;
+  min-height: 500px;
+  padding: 30px 20px;
+  background-color: rgba(255, 244, 244, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.container-pay {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-pay input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-pay input[type='checkbox']:after {
+  font-family: 'Font Awesome 6 free';
+  font-weight: 700;
+  font-size: 30px;
+  color: #fdc463;
+  content: '\f00c';
+  display: none;
+}
+
+.container-pay input[type='checkbox']:checked:after {
+  display: block;
+}
+
+.container-pay label {
+  cursor: pointer;
+}
+
+.date-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.label-form {
+  font-size: 20px;
+}
+
+.input-form {
+  font-size: 18px;
+  padding: 15px 5px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.input-form,
+input[type='date'],
+.form select {
+  color: gray;
+  background-color: #fff4f4;
+}
+
+.fa-location-dot {
+  position: absolute;
+  top: 83px;
+  left: 450px;
+  color: black;
+  font-size: 25px;
+}
+
+input[type='date'] {
+  margin-top: 10px;
+}
+
+.btn-form {
+  background-color: #fdc463;
+  padding: 15px 0;
+  font-size: 20px;
+  border-radius: 10px;
+}

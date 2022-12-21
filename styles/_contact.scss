@@ -1,0 +1,28 @@
+.contact {
+  padding: 30px 60px;
+  background-color: #fee0ae;
+}
+
+.contact-container {
+  display: flex;
+  gap: 150px;
+}
+
+.contact-col {
+  width: 200px;
+}
+
+.contact-col-title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.contact-content-text {
+  margin-bottom: 8px;
+}
+
+.contact-col-content-social {
+  display: flex;
+  gap: 10px;
+}
